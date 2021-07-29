@@ -27,6 +27,7 @@ stages:
   - job: Build
     displayName: Build
     pool:
+      name: 'myagentpool'
       vmImage: $(vmImageName)
     steps:
     - task: Docker@2
@@ -50,6 +51,7 @@ stages:
   - deployment: Deploy
     displayName: Deploy
     pool:
+      name: 'myagentpool'
       vmImage: $(vmImageName)
     environment: 'dev-2'
     strategy:
