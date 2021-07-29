@@ -28,7 +28,7 @@ stages:
     displayName: Build
     pool:
       name: 'mydockerpool'
-      vmImage: $(vmImageName)
+      # vmImage: $(vmImageName)
     steps:
     - task: Docker@2
       displayName: Build and push an image to container registry
@@ -52,7 +52,7 @@ stages:
     displayName: Deploy
     pool:
       name: 'mydockerpool'
-      vmImage: $(vmImageName)
+      # vmImage: $(vmImageName)
     environment: 'dev-2'
     strategy:
       runOnce:
