@@ -1,7 +1,7 @@
 # Pipeline de CI/CD Azure DevOps ACR + AKS
 
 ## Table des matières
-1. [**Créer un compte et installer Azure CLI**](1-créer-un-compte-et-installer-azure-cli)
+1. [**Créer un compte et installer Azure CLI**](#1-créer-un-compte-et-installer-azure-cli)
 1. [**Créer un environnement ACR + AKS**](#2-créer-un-environnement-acr--aks)
 1. [**Créer un environnement ACR + AKS avec Azure CLI depuis Docker**](#3-créer-un-environnement-acr--aks-avec-azure-cli-depuis-docker)
 1. [**Créer le pipeline**](#4-créer-le-pipeline)
