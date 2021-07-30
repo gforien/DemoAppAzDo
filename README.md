@@ -1,10 +1,10 @@
 # Pipeline de CI/CD Azure DevOps ACR + AKS
 
 ## Table des matières
-1. [**Créer un compte et installer Azure CLI**](#cr%C3%A9er-un-compte-et-installer-azure-cli)
-1. [**Créer un environnement ACR + AKS**](#cr%C3%A9er-un-environnement-acr--aks)
-1. [**Créer un environnement ACR + AKS avec Azure CLI depuis Docker**](#cr%C3%A9er-un-environnement-acr--aks-avec-azure-cli-depuis-docker)
-1. [**Créer le pipeline**](#cr%C3%A9er-le-pipeline)
+1. [**Créer un compte et installer Azure CLI**](1-créer-un-compte-et-installer-azure-cli)
+1. [**Créer un environnement ACR + AKS**](#2-créer-un-environnement-acr--aks)
+1. [**Créer un environnement ACR + AKS avec Azure CLI depuis Docker**](#3-créer-un-environnement-acr--aks-avec-azure-cli-depuis-docker)
+1. [**Créer le pipeline**](#4-créer-le-pipeline)
 
 <ins>**Pour plus tard:**</ins> [CI/CD on GKE](https://cloud.google.com/architecture/creating-cicd-pipeline-vsts-kubernetes-engine) et [CI/CD on EKS](https://github.com/aws-samples/amazon-eks-cicd-codebuild)
 
@@ -218,7 +218,7 @@ On continue ✅
 1. Il manque le package [**replacetokens**](https://marketplace.visualstudio.com/items?itemName=qetza.replacetokens)
 
 1. Impossible de build car impossible de lancer des projets en parallèle. Lu le [billet de blog de Microsoft](https://devblogs.microsoft.com/devops/change-in-azure-pipelines-grant-for-private-projects/) à ce sujet, et rempli ma demande.
-    - Solution sur [r/azuredevops] pour lancer un self hosted agent(https://www.reddit.com/r/azuredevops/comments/mvif7g/unable_to_run_pipeline/)
+    - [Solution sur r/azuredevops](https://www.reddit.com/r/azuredevops/comments/mvif7g/unable_to_run_pipeline/) pour lancer un self hosted agent
     - Je suis [ces instructions](https://docs.microsoft.com/en-us/azure/devops/pipelines/agents/v2-windows?view=azure-devops) qui me font seulement créer un PAT
     - Je lance [l'image Docker d'un Azure Pipelines Agent](https://hub.docker.com/_/microsoft-azure-pipelines-vsts-agent)
     - en fait l'image est deprecated, et plus mise à jour depuis 5 ans comme écrit sur [leur Github](https://github.com/microsoft/vsts-agent-docker)
